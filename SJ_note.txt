@@ -1,0 +1,33 @@
+/************************************************************
+TCPSyphon/ UDPSyphon
+************************************************************/
+■TCPSyphon
+	http://techlife.sg/TCPSyphon/index_jp.html
+	
+■TCPSyphonとUDPSyphonの違いについて
+	http://techlife.sg/UDPSyphon/index_jp.html
+	
+	contents
+		配信先が１つや２つの場合で、確実に高いフレームレートで送出したい場合は、TCPSyphonをお使いください。
+		
+	検討結果
+		ことなるPC間での画像送信はできたが、処理が非常に重かった(CPU占有率が高い).
+		これでは意味がないので、Hardwareを用いた手法(BlackMagic)を再調査.
+		
+/************************************************************
+Conclusion
+************************************************************/
+比較
+	BlackMagic vs TCPSyphon.xlsx
+
+conclusion
+	BlackMagicを使用すべし.
+	
+comment
+	BlackMagicも、PCU占有率が55[%]と低くはないが、TCPSyphonよりは低い。
+	また、負荷も安定している。
+	さらに、TCPSyphonは、Server側に高負荷がかかるのが難点.
+	それならば、同mac内の別Processでの処理でも良い。
+	
+
+
